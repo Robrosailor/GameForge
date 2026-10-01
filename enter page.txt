@@ -1,0 +1,27 @@
+enter page
+followed by signup
+
+index.html page
+game page
+    genres:
+    adventure
+    rpg
+    fps
+    sports
+    fighting
+    racing
+
+upload page
+download page
+sign up page
+download history and library page
+
+support contact
+
+admin(for back-end)
+
+styles/css folder - css script for the whole page
+
+*need to consider cybersecurity with cloud solutions
+
+

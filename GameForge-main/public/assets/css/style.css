@@ -1,0 +1,282 @@
+/* ==========================================================
+   STEAMPUNK + NEON GLOBAL THEME
+   ========================================================== */
+
+:root {
+  --bg: #0b0c10;              /* Deep iron */
+  --panel: #13151a;           /* Dark steel */
+  --gold: #cfa86b;            /* Brass */
+  --light: #f8e3b0;           /* Warm parchment */
+  --neon: #ff7b00;            /* Orange neon glow */
+  --neon-blue: #00c8ff;       /* Cyan neon accent */
+  --text: #f4f1ea;            /* Soft ivory */
+  --muted: #9b9b9b;           /* Steel gray */
+  --border: rgba(207,168,107,.35); /* Brass glow */
+}
+
+/* ==========================================================
+   GLOBAL
+   ========================================================== */
+
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #0b0c10 60%);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================================================
+   FLEXBOX LAYOUT SYSTEM
+   ========================================================== */
+
+.site-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.support-options {
+  display: flex;
+  gap: 20px;
+}
+
+.detail-columns {
+  display: flex;
+  gap: 25px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* ==========================================================
+   SIDEBAR
+   ========================================================== */
+
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #0f1014, #1b1d22);
+  border-right: 2px solid var(--gold);
+  box-shadow: 4px 0 15px rgba(255, 123, 0, .2);
+  padding: 25px;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sidebar-logo .mini-compass {
+  font-size: 32px;
+  padding: 10px;
+  border: 2px solid var(--gold);
+  display: inline-block;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px var(--neon);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-nav a {
+  color: var(--light);
+  padding: 10px 15px;
+  border-left: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.sidebar-nav a:hover {
+  border-left: 2px solid var(--neon);
+  color: var(--neon-blue);
+}
+
+/* ==========================================================
+   HEADERS
+   ========================================================== */
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+.small-heading {
+  color: var(--muted);
+  letter-spacing: 2px;
+}
+
+/* ==========================================================
+   PANELS + CARDS
+   ========================================================== */
+
+.content-panel,
+.game-card,
+.upload-box,
+.stats > div,
+.support-options > div {
+  background: linear-gradient(135deg, #1b1d22, #0f1014);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 12px rgba(255, 123, 0, .15);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.game-card {
+  width: 280px;
+}
+
+.upload-box {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================
+   HERO SECTIONS
+   ========================================================== */
+
+.hero-section,
+.game-detail-hero {
+  background: linear-gradient(135deg, #1b1d22, #0f1014);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 20px rgba(255, 123, 0, .25);
+  padding: 35px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+/* ==========================================================
+   IMAGES + FRAMES
+   ========================================================== */
+
+.game-image,
+.detail-cover,
+.screenshot-grid > div,
+.placeholder {
+  background: linear-gradient(135deg, #1b1d22, #0f1014);
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 12px rgba(255, 123, 0, .25);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  height: 180px;
+}
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.primary-btn {
+  background: linear-gradient(135deg, #a05f1b, #d98c2b);
+  border: 1px solid var(--gold);
+  color: #fff;
+  padding: 11px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 123, 0, .4);
+}
+
+.primary-btn:hover {
+  background: var(--neon);
+  color: #111;
+  box-shadow: 0 0 15px var(--neon);
+}
+
+.secondary-btn {
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--light);
+  padding: 11px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-link {
+  color: var(--neon-blue);
+  text-shadow: 0 0 8px var(--neon-blue);
+}
+
+/* ==========================================================
+   FORMS
+   ========================================================== */
+
+input,
+select,
+textarea {
+  background: #0f1014;
+  border: 1px solid #3a2f25;
+  color: var(--text);
+  padding: 13px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--neon);
+  box-shadow: 0 0 8px var(--neon);
+}
+
+/* ==========================================================
+   TABLES
+   ========================================================== */
+
+table {
+  background: #13151a;
+  border: 1px solid var(--border);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #1b1d22;
+  color: var(--light);
+  text-shadow: 0 0 6px var(--neon);
+  padding: 15px;
+}
+
+td {
+  border-bottom: 1px solid #282828;
+  padding: 15px;
+}
